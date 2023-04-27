@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabor Urbano | Inicio</title>
+    <link rel="icon" href="./assets/img/logo-icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/base/_reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/productos.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/formulario.css">
+    <link rel="stylesheet" href="./assets/css/rodapie.css">
+  </head>
+  <body>
+    <header class="header container">
+        <div class="header_info">
+            <a href="./index.html"><img class="header__logo" src="./assets/img/logo_tienda.png" alt="logo de empresa"></a>
+            <input class="header__input" type="text" placeholder="¿Que antojo tienes hoy?" data-buscador>
+            <img class="header__lupa" src="./assets/img/icons/lupa.svg" alt="lupa">
+        </div>
+        <a class="header__boton" href="./screens/login.html">Login</a>
+        <img class="header__lupa-mobile" src="./assets/img/icons/lupa-mobile.svg" alt="lupa">
+    </header>
+    <main>
+
+        <!--------------------------------->
+        <!------------ BANNER ------------->
+        <!--------------------------------->
+
+        <section class="banner">
+            <div class="banner__contenido container">
+                <h1 class="banner__titulo">Promocion de la semana</h1>
+                <p class="banner__texto">Todas las Pizzas con 10% de descuento</p>
+                <a class="banner__boton" href="#pizzas">Ver Pizzas</a>
+            </div>
+        </section>
+
+        <!---------------------------------->
+        <!------------ PRODUCTOS ----------->
+        <!---------------------------------->
+
+        <section class="seccion__productos">
+            <div class="productos container">
+                <div id="combos" class="combos">
+                    <div class="combos__head">
+                        <h1 class="combos__head__titulo-principal">Combos</h1>
+                        <a class="combos__head__boton" href="./screens/todos-productos.html">Ver todo</a>
+                    </div>
+                    <div class="productos_index" data-combos>
+
+                    </div>
+                </div>
+                <div id="hamburguesas" class="hamburguesas">
+                    <div class="hamburguesas__head">
+                        <h1 class="hamburguesas__head__titulo-principal">Hamburguesas</h1>
+                        <a class="hamburguesas__head__boton" href="./screens/todos-productos.html">Ver todo</a>
+                    </div>
+                    <div class="productos_index" data-hamburguesas>
+                        
+                    </div>
+                </div>
+                <div id="pizzas" class="pizzas">
+                    <div   class="pizzas__head">
+                        <h1 class="pizzas__head__titulo-principal">Pizzas</h1>
+                        <a class="pizzas__head__boton" href="./screens/todos-productos.html">Ver todo</a>
+                    </div>
+                    <div class="productos_index" data-pizzas>
+                        
+                    </div>
+                </div>
+                <div id="refrescos" class="refrescos">
+                    <div class="refrescos__head">
+                        <h1 class="refrescos__head__titulo-principal">Refrescos</h1>
+                        <a class="refrescos__head__boton" href="./screens/todos-productos.html">Ver todo</a>
+                    </div>
+                    <div class="productos_index" data-bebidas>
+                          
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------------->
+        <!------------- CONTACTO ------------>
+        <!----------------------------------->
+
+        <section class="footer">
+            <div class="contenido__footer container">
+                <div class="contenido__footer_info">
+                    <a href="./index.html"><img class="header__logo" src="./assets/img/logo_tienda.png" alt="logo de alura geek"></a>
+                    <ul  class="footer_links">
+                        <li class="footer__enlace"><a href="./screens/404error.html">Quienes somos</a></li>
+                        <li class="footer__enlace"><a href="./screens/404error.html">Nuestras Tiendas</a></li>
+                        <li class="footer__enlace"><a href="./screens/404error.html">Quiero ser franquiciado</a></li>
+                        <li class="footer__enlace"><a href="./screens/404error.html">Politica de privacidad</a></li>
+                   </ul>
+                </div>
+                <div class="footer_formulario">
+                    <h3 class="footer_formulario__titulo">Hable con nosotros</h2>
+                    <form action="">
+                        <div class="formulario__input-container">
+                            <input name="nombre" id="nombre" class="input inputs" type="text" placeholder="" required data-tipo="nombre">
+                            <label class="input-label" for="nombre">Nombre</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="formulario__textarea-container">
+                            <textarea name="mensaje" id="mensaje" class="textarea inputs" rows="5" type="text" placeholder="" required data-tipo="mensaje"></textarea>
+                            <label class="input-label" for="mensaje">Escribe tu mensaje</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <input class="boton-form" type="submit" name="enviar" id="enviar" value="Enviar Mensaje">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!----------------------------------->
+    <!-------------- FOOTER ------------->
+    <!----------------------------------->
+
+    <footer class="rodapie">
+        <p class="rodapie__texto">Desarrollado por Luigui Rodriguez</p>
+        <p class="rodapie__texto">2023</p>
+    </footer>
+    <script type="module" src="../controllers/cliente.controller.js"></script>
+    <script src="/controllers/busqueda.controller.js" type="module"></script>
+  </body>
+</html>

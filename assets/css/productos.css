@@ -1,0 +1,93 @@
+.seccion__productos{
+    background-color: #f5f5f5;
+    padding: 3rem 0;
+}
+
+.combos,
+.hamburguesas,
+.pizzas,
+.refrescos{
+    margin: 0 0 2rem 0;
+}
+
+.combos__head,
+.hamburguesas__head,
+.pizzas__head,
+.refrescos__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.combos__head__titulo-principal,
+.hamburguesas__head__titulo-principal,
+.pizzas__head__titulo-principal,
+.refrescos__head__titulo-principal{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+}
+
+.combos__head__boton,
+.hamburguesas__head__boton,
+.pizzas__head__boton,
+.refrescos__head__boton{
+    color: #2A7AE4;
+    font-weight: 800;
+}
+
+.combos__head__boton::after,
+.hamburguesas__head__boton::after,
+.refrescos__head__boton::after,
+.pizzas__head__boton::after{
+	content: '🡪';
+	color: #2A7AE4;
+    margin-left: .6rem;
+}
+
+.combos__productos,
+.hamburguesas__productos,
+.pizzas__productos,
+.refrescos__productos,
+.productos_admin,
+.producto_similares,
+.productos_index{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+}
+
+.producto__card__imagen{
+    height: 279px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+}
+
+.producto__card__imagen,
+.producto__card__titulo,
+.producto__card__precio{
+    margin-bottom: .5rem;
+    
+}
+
+
+
+.producto__card__precio{
+    font-weight: 800;
+}
+
+.producto__card__boton{
+    color: #2A7AE4;
+    font-weight: 800;
+}
+
+.productos__resultados_mensaje{
+    height: 30vh;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+}

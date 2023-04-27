@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabor Urbano | Inicio</title>
+    <link rel="icon" href="../assets/img/logo-icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base/_reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/banner.css">
+    <link rel="stylesheet" href="../assets/css/productos.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/formulario.css">
+    <link rel="stylesheet" href="../assets/css/rodapie.css">
+    <link rel="stylesheet" href="../assets/css/404error.css">
+  </head>
+  <body>
+    <header class="header container">
+        <div class="header_info">
+            <a href="../index.html"><img class="header__logo" src="../assets/img/logo_tienda.png" alt="logo de empresa"></a>
+            <input class="header__input" type="text" placeholder="¿Que antojo tienes hoy?" data-buscador>
+            <img class="header__lupa" src="../assets/img/icons/lupa.svg" alt="lupa">
+        </div>
+        <a class="header__boton" href="../screens/login.html">Login</a>
+        <img class="header__lupa-mobile" src="../assets/img/icons/lupa-mobile.svg" alt="lupa">
+    </header>
+    <main>
+
+        <div class="informacion__error">
+            <div class="informacion__error__imagen">
+              <img src="../assets/img/error404.png" alt="error404">
+            </div>
+            <div class="informacion__error__contenido">
+              <h1 class="informacion__error__contenido__titulo">Lo sentimos</h1>
+              <p class="informacion__error__contenido__texto">La pagina que estas buscando esta temporalmente inhabilitada</p>
+              <a class="informacion__error__contenido__boton" href="../index.html">Regresar al Inicio</a>
+            </div>
+          </div>
+           
+        
+    <!----------------------------------->
+    <!-------------- FOOTER ------------->
+    <!----------------------------------->
+
+    <footer class="rodapie">
+        <p class="rodapie__texto">Desarrollado por Luigui Rodriguez</p>
+        <p class="rodapie__texto">2023</p>
+    </footer>
+    <script type="module" src="../controllers/cliente.controller.js"></script>
+    <script src="/controllers/busqueda.controller.js" type="module"></script>
+  </body>
+</html>
