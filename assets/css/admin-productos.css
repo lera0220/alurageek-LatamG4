@@ -25,18 +25,18 @@
 .producto__card__imagen{
     height: 279px;
     display: flex;
-    justify-content:flex-end;
     align-items: flex-start;
+    justify-content:flex-end;
 }
 
- .boton-eliminar{
-    padding-top: .6rem;
+.boton-eliminar{
+    padding-top: .7rem;
     padding-right: .8rem;
     transition: transform .2s; 
 }
 
 .boton-editar{
-    padding-right: .7rem;
+    padding-right: .8rem;
     padding-top: .55rem;
     transition: transform .2s; 
 }

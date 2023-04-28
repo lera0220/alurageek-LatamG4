@@ -6,8 +6,22 @@ form.addEventListener("submit", (evento) => {
   const password = document.querySelector("[data-login-password]").value;
 
   if (email.length > 5 && password.length > 5) {
-    window.location.href = "../screens/admin-productos.html";
-  } else {
-    alert("email y contraseña deben tener mas de 5 caracteres.");
-  }
+        Swal.fire({
+        icon: 'success',
+        title: 'Login Exitoso',
+        showConfirmButton: false,
+        timer: 1500
+      })
+  
+      setTimeout(function(){
+        window.location.href = "../screens/admin-productos.html";
+      }, 2000);
+      
+    }else{
+      Swal.fire({
+        icon: 'error',
+        title: 'Datos incorrectos',
+        text: 'Usuario y Contraseña deben tener mas de 5 letras'
+      })
+    }
 });

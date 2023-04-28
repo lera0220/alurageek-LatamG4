@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sabor Urbano | Inicio</title>
+    <title>Sabor Urbano | Adminstrar</title>
     <link rel="icon" href="../assets/img/logo-icon.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
@@ -20,9 +20,10 @@
     <link rel="stylesheet" href="../assets/css/productos.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/formulario.css">
-    <link rel="stylesheet" href="../assets/css/rodapie.css">
     <link rel="stylesheet" href="../assets/css/admin-productos.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto.css">
     <link rel="stylesheet" href="../assets/css/login.formulario.css">
+
   </head>
   <body>
     <header class="header container">
@@ -37,29 +38,58 @@
     <main>
 
         <!---------------------------------->
-        <!------------ LOGIN---------------->
+        <!--------- Editar Productos ------->
         <!---------------------------------->
-        <div class="formulario" data-login>
+        <title>Editar Producto - Sabor Urbano</title>
+</head>
+<body>
+        
+        <div class="formulario">
             <div class="formulario-login container">
-                <h3 class="formulario-login__titulo">Iniciar Sesión</h2>
-                <form action="" class="formulario-login_form">
+                <h3 class="formulario-login__titulo">Edicion de Producto</h2>
+                <form action="" class="formulario-login_form" data-form-registro>
+                    <div class="imagen">
+                        <div class="imagen-drop" data-drag-area>
+                            <img class="imagen-drop-img" src="../assets/img/icons/Vector-imagen.svg" alt="icono agrega imagen">
+                            <img class="imagen-drop-img__pantalla-mobile" src="../assets/img/icons/Vector-imagen_mobile.svg" alt="icono agrega imagen">
+                            <p class="imagen-drop-texto">Arrastre para agregar una imagen para el producto</p>
+                        </div>
+                        <p class="texto_o">O</p>
+                        <div class="imagen-boton">
+                            <label for="agregar__imagen__boton" class="agregar__imagen__boton__texto">Busque en su dispositivo</label>
+							<input type="file" name="imagen" id="agregar__imagen__boton" class="agregar__imagen__boton" name="fileinput" />
+                        </div>
+                    </div>
                     <div class="formulario-login__input-container">
-                        <input name="usuario" id="usuario" class="input inputs" type="text" placeholder="" required data-tipo="usuario" data-login-usuario>
-                        <label class="input-label" for="usuario">Escribe tu usuario</label>
+                        <input name="producto" id="producto" class="input inputs" type="text" placeholder="" required data-tipo="nombreProducto" pattern="^[\s\S]{0,40}$"  data-form-producto-nombre>
+                        <label class="input-label" for="producto">Nombre del producto</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="formulario-login__input-container">
-                        <input name="contraseña" id="contraseña" class="input inputs input-contraseña" type="password" placeholder="" required   data-tipo="contraseña" data-login-password>
-                        <label class="input-label" for="contraseña">Escribe tu contraseña</label>
+                        <input name="precio" id="precio" class="input input-precio inputs" type="text" placeholder="" required data-tipo="precioProducto" pattern="[0-9]*"  data-form-producto-precio>
+                        <label class="input-label" for="precio">Precio del producto</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
-                    <input class="boton-formulario-login" type="submit" name="enviar" id="enviar-login" value="Entrar">
+                    <div class="formulario-login__select">
+                        <p>Categoria</p>
+                        <select class="select-css" data-form-producto-categoria>
+                            <option>Elige una Categoria</option>
+                            <option>Combos</option>
+                            <option>Hamburguesas</option>
+                            <option>Pizzas</option>
+                            <option>Bebidas</option>
+                        </select>
+                    </div>
+                    <div class="formulario__textarea-container">
+                        <textarea name="descripcion" id="descripcion" class="textarea inputs" rows="5" type="text" placeholder="" required data-tipo="descripcionProducto" maxlength="300" data-form-producto-descripcion></textarea>
+                        <label class="input-label" for="descripcion">Descripcion del producto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <input class="boton-formulario-login" type="submit" name="enviar" id="enviar" value="Editar Producto">
                 </form>
             </div>
         </div>
        
-     
-
         <!----------------------------------->
         <!------------- CONTACTO ------------>
         <!----------------------------------->
@@ -103,9 +133,10 @@
         <p class="rodapie__texto">Desarrollado por Luigui Rodriguez</p>
         <p class="rodapie__texto">2023</p>
     </footer>
-    <script src="/controllers/busqueda.controller.js" type="module"></script>
+    <script src="../controllers/actualizar.controller.js" type="module"></script>
+    <script src="../js/drag-drop-img.js"></script>
+    <script src="../controllers/busqueda.controller.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3"></script>
-    <script src="../js/login.js"></script>
     <script src="../js/app.js" type="module"></script>
   </body>
 </html>

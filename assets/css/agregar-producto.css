@@ -16,7 +16,7 @@
 
 .imagen-drop{
     width: 60%;
-    height: 273px;
+    height: 200px;
     background-color: #fdfdfd;
     border: 2px dashed #C8C8C8;
     display: flex;
@@ -40,7 +40,7 @@
 }
 
 .texto_o{
-    width: 10%;
+    width: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
