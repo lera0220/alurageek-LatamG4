@@ -1,5 +1,6 @@
-
+//https://my-json-server.typicode.com/lera0220/alurageek-LatamG4/productos/
 const listaProductos = () => fetch("https://my-json-server.typicode.com/lera0220/alurageek-LatamG4/productos").then((respuesta) => respuesta.json())
+
 
 const crearProducto = (nombre, precio, imagen, categoria, descripcion) => {
   return fetch('https://my-json-server.typicode.com/lera0220/alurageek-LatamG4/productos', {
@@ -23,7 +24,7 @@ const detalleProducto = async (id) => {
 };
 
 const actualizarProducto = (nombre, precio, imagen, id, categoria, descripcion) => {
-  return fetch(`https://my-json-server.typicode.com/lera0220/alurageek-LatamG4/productos/${id}`,{
+  return fetch(`http://localhost:3000/productos/${id}`,{
     method: "PUT",
     headers: {
       "Content-Type": "application/json"

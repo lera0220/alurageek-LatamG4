@@ -1,5 +1,4 @@
 import { clienteServices } from "../services/cliente.services.js";
-
 const formulario = document.querySelector("[data-form-registro]");
 formulario.addEventListener("submit", (eventoSubmit) => {
   eventoSubmit.preventDefault();
@@ -14,8 +13,8 @@ formulario.addEventListener("submit", (eventoSubmit) => {
   const descripVaciar = document.querySelector("[data-form-producto-descripcion]");
   const zonaDrag = document.querySelector("[data-drag-area]")
   const contenidoDrag = `
-  <img class="imagen-drop-img" src="../assets/img/Vector-imagen.svg" alt="icono agrega imagen">
-  <img class="imagen-drop-img__pantalla-mobile" src="../assets/img/Vector-imagen_mobile.svg" alt="icono agrega imagen">
+  <img class="imagen-drop-img" src="../assets/img/icons/Vector-imagen.svg" alt="icono agrega imagen">
+  <img class="imagen-drop-img__pantalla-mobile" src="../assets/img/icons/Vector-imagen_mobile.svg" alt="icono agrega imagen">
   <p class="imagen-drop-texto">Arrastre para agregar una imagen para el producto</p>
   `
   //Enviando datos a la funcion que crea el producto
@@ -30,7 +29,7 @@ formulario.addEventListener("submit", (eventoSubmit) => {
     zonaDrag.classList.remove("active");
     zonaDrag.innerHTML = contenidoDrag;
     Swal.fire(
-      'Perfecto!',
+      'Excelente!',
       'Producto Creado!',
       'success'
     )
