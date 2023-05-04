@@ -69,15 +69,3 @@
         flex-direction: column;
     }
 } 
-@media (max-width:1024px){
-
-    .seccion__producto{
-        padding-top: 2rem;
-        padding-bottom: 0;
-    }
-
-    .producto__imagen{
-        height: auto;
-    }
-    
-} 
