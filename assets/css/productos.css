@@ -91,3 +91,14 @@
     font-size: 2rem;
     color: #464646;
 }
+
+
+
+
+@media (min-width:701px) and (max-width:1024px){
+
+    .productos__resultados_mensaje{
+        height: 46vh;
+    }
+
+}

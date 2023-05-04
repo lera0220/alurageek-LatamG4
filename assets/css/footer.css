@@ -29,13 +29,17 @@
 
 .footer_formulario{
     width: 50%;
+    text-align: center;
+}
+.rodapie{
+    text-align: center;
 }
 
-/* ------------------------------------ */
-/* ----- Responsive para Mobiles ------ */
-/* ------------------------------------ */
+/* ----------------------- */
+/* ----- Responsive ------ */
+/* ----------------------- */
 
-@media only screen and (max-width: 767px){
+@media (max-width: 700px){
 
     .footer{
         padding: 1.5rem 0;
@@ -55,6 +59,10 @@
         align-items: center;
         text-align: center;
     }
+    .contenido__footer_info img.header__logo{
+        width: 100%;
+    }
+
 
     .footer_links{
         margin: 1rem 0 2rem 0;
@@ -71,16 +79,14 @@
 
 }
 
-/* ------------------------------------ */
-/* ----- Responsive para Tablets ------ */
-/* ------------------------------------ */
 
-@media (min-width:768px) and (max-width:1024px){
+
+@media(max-width:1024px){
 
     .contenido__footer_info{
         flex-direction: column;
     }
-
+    
     .footer_links{
         height: 75%;
     }
@@ -91,6 +97,7 @@
 
     .footer_formulario{
         width: 65%;
+       
     }
 
 }

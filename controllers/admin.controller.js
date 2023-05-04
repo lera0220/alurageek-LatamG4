@@ -24,7 +24,7 @@ const MostrarProductosAdmin = (nombre, precio, descripcion, imagen, id, categori
     const id = btnEliminar.id;
     Swal.fire({
       title: 'Estas seguro?',
-      text: `Quieres eliminar el producto: ${nombre} ? esta accion no es revertible!`,
+      text: `Quieres eliminar el producto: ${nombre} ? esta accion no sera revertible!`,
       icon: 'question',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
@@ -38,7 +38,7 @@ const MostrarProductosAdmin = (nombre, precio, descripcion, imagen, id, categori
         swal.fire({
           position: 'center',
           icon: 'success',
-          title: 'El producto ha sido eliminado',
+          title: 'El producto fue eliminado',
           showConfirmButton: false,
           timer: 1500
         })

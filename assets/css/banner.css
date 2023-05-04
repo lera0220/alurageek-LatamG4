@@ -31,7 +31,29 @@
 }
 
 .banner__boton:hover{
-    box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.45);
+    color: rgb(0, 183, 255);
 }
 
+/* ----------------------- */
+/* ----- Responsive ------ */
+/* ----------------------- */
+@media (max-width: 700px){
+
+    .banner{
+        height: 250px;
+    }
+
+    .banner__contenido{
+        top:calc(200px / 2);
+    }
+
+    .banner__titulo{
+        font-size: 35px;
+    }
+    .banner__boton{
+        padding: .5rem 1rem;
+    }
+    
+
+}
 

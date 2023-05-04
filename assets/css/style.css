@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -14,10 +14,8 @@ body{
 }
 
 
-/* ------------------------------------ */
-/* ----- Responsive para Mobiles ------ */
-/* ------------------------------------ */
-@media only screen and (max-width: 767px){
+
+@media (max-width: 700px){
 
     .seccion__producto{
         padding-top: 0;
@@ -41,11 +39,9 @@ body{
     }
 } 
 
-/* ------------------------------------ */
-/* ----- Responsive para Tablets ------ */
-/* ------------------------------------ */
 
- @media (min-width:768px) and (max-width:1024px){
+
+ @media (max-width:1024px){
 
     .seccion__producto{
         padding-top: 2rem;
