@@ -1,5 +1,4 @@
-```js
-json-server --watch db.json
-```
+PROJECTO ALURAGEEK
 
-Browser sync: browser-sync start --server --file . --host --port 5000 --startPath screens/lista_cliente.html
+//JSON BASE DE DATOS PRODUCTOS ONLINE
+//https://my-json-server.typicode.com/lera0220/alurageek-LatamG4/productos/
